@@ -21,5 +21,4 @@
 #' @importFrom EBImage watershed
 #' @importFrom EBImage computeFeatures
 #' @importFrom EBImage computeFeatures.moment
-#' @export Well_Slide2_9_APC.png
 NULL

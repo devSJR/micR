@@ -27,8 +27,8 @@ with the aim to find region of interest from nuclei.
 Stefan Roediger
 }
 \references{
-Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). "EBImage—an R 
-package for image processing with applications to cellular phenotypes." Bioinformatics, 
+Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage—an R 
+package for image processing with applications to cellular phenotypes. Bioinformatics, 
 26(7), pp. 979–981. http://doi.org/10.1093/bioinformatics/btq046.
 }
 \keyword{blur}
