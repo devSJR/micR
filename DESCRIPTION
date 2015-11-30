@@ -4,10 +4,9 @@ Title: Process image data for the enumeration of fluorescent image cells
 Encoding: UTF-8
 Version: 0.0.1
 Date: 2015-11-27
-Author: Stefan Rödiger
+Author: Stefan Rödiger (cre), Michał Burdukiewicz (ctr)
 Maintainer: Stefan Roediger <Stefan.Roediger@b-tu.de>
-Description: Wrapper and pipelines for the automatic image processing based on
-    mainly on EBImage, bmp and foreach
+Description: Wrapper and pipelines for automatic image processing based mainly on EBImage, bmp and foreach
 License: GPL-3
 Imports:
     bmp,

@@ -1,14 +1,19 @@
 #' @name Images
 #' @title Exemplary images
-#' @description Images bla bla
+#' @description Example images for the micR package
 #' @docType data
 #' @format .png images.
-#' @source Some complicated machine.
+#' @source The data were taken with the VideoScan technology.
+#' @author Jens Schneider (BTU CS), Stefan Rödiger (BTU CS), Michał Burdukiewicz
+#' (University of Wrocław)
+#' @references Rödiger, S.; Schierack, P.; Böhm, A.; Nitschke, J.; Berger, I.; 
+#' Frömmel, U.; Schmidt, C.; Ruhland, M.; Schimke, I.; Roggenbuck, D.; 
+#' Lehmann, W.; Schröder, C. Adv. Biochem. Eng. Biotechnol. 2013, 133, 35--74.
 #' @examples 
 #' # read all images
 #' library(EBImage)
-#' readImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
-#' readImage(system.file('images/Well_Slide2_9_Cy3.png', package='micR'))
-#' readImage(system.file('images/Well_Slide2_9_DAPI.png', package='micR'))
-#' readImage(system.file('images/Well_Slide2_9_FITC.png', package='micR'))
+#' img.APC <- readImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
+#' img.Cy3 <- readImage(system.file('images/Well_Slide2_9_Cy3.png', package='micR'))
+#' img.DAPI <- readImage(system.file('images/Well_Slide2_9_DAPI.png', package='micR'))
+#' img.FITC <- readImage(system.file('images/Well_Slide2_9_FITC.png', package='micR'))
 NULL
