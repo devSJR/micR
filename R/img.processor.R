@@ -9,15 +9,15 @@
 #' @details This function is a pipline of EBImage function to process an image 
 #' with the aim to find region of interest from nuclei.
 #' @author Stefan Roediger
-#' @references Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). "EBImage—an R 
-#' package for image processing with applications to cellular phenotypes." Bioinformatics, 
+#' @references Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage—an R 
+#' package for image processing with applications to cellular phenotypes. Bioinformatics, 
 #' 26(7), pp. 979–981. http://doi.org/10.1093/bioinformatics/btq046. 
 #' @keywords nucleus blur watershed
 #' @export img.processor
 
 img.processor <- function(img.raw = NULL, gblur.sigma = 2, thresh.w = 20, 
 			  thresh.h = 20, thresh.offset = 0.02, watershed.ext = 1) {
-      img.gblur 	<- gblur(img, sigma = gblur.sigma)
+      img.gblur 	<- gblur(img.raw, sigma = gblur.sigma)
       img.thresh 	<- thresh(img.gblur, w = thresh.w, h = thresh.h, offset = thresh.offset)
       img.opening 	<- opening(img.thresh, makeBrush(5, shape='disc'))
       img.fillHull 	<- fillHull(img.opening)

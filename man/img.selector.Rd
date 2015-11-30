@@ -4,7 +4,7 @@
 \alias{img.selector}
 \title{Determines the object number of an EBImage processed image}
 \usage{
-img.selector(img.moment, min.diameter = 35, max.diameter = 55,
+img.selector(img.moment, min.diameter = 5, max.diameter = 55,
   pixel.length = 325)
 }
 \arguments{
@@ -20,7 +20,7 @@ img.selector(img.moment, min.diameter = 35, max.diameter = 55,
 Selects objects based on a specific parameter value (currently nucleus diamter, only).
 }
 \details{
-This function which image object are within a defined size range (e.g., betwenn 35 and 55 micro meter in diamter).
+This function which image object are within a defined size range (e.g., betwenn 5 and 25 micro meter in diamter).
 }
 \author{
 Stefan Roediger
