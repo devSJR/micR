@@ -12,14 +12,15 @@
 #' @importFrom bmp read.bmp
 #' @importFrom EBImage as.Image
 #' @importFrom EBImage bwlabel
+#' @importFrom EBImage computeFeatures
+#' @importFrom EBImage computeFeatures.moment
 #' @importFrom EBImage distmap
 #' @importFrom EBImage fillHull
 #' @importFrom EBImage gblur
 #' @importFrom EBImage makeBrush
 #' @importFrom EBImage opening
+#' @importFrom EBImage readImage
 #' @importFrom EBImage thresh
 #' @importFrom EBImage watershed
-#' @importFrom EBImage computeFeatures
-#' @importFrom EBImage computeFeatures.moment
 #' @importFrom tools file_ext
 NULL
