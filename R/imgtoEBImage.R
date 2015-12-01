@@ -4,11 +4,21 @@
 #' 
 #' @param file is the raw image (bmp).
 #' @details This is a helper function to prepare pixel graphics for further use in EBImage.
-#' @author Stefan Roediger
+#' @author Stefan Rödiger
 #' @references T.B.D. 
 #' @keywords bmp
+#' @examples imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
 #' @export imgtoEBImage
 
 imgtoEBImage <- function(file) {
-  as.Image(read.bmp(f = file))
+  
+  file.ext <- file_ext(file)
+  
+  if (file.ext == "bmp") {
+    as.Image(read.bmp(f = file))
+  } 
+  
+  if (file.ext == "tiff" || file.ext == "png" || file.ext == "jpeg") {
+    readImage(file)
+  }
 }

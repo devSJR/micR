@@ -7,7 +7,7 @@
 #' @param max.diameter is the maximum diameter of a nucleus
 #' @param pixel.length is the pixel length of the CCD chip (e.g., 325 nm)
 #' @details This function which image object are within a defined size range (e.g., betwenn 5 and 25 micro meter in diamter).
-#' @author Stefan Roediger
+#' @author Stefan Rödiger
 #' @references T.B.D. 
 #' @keywords select ROI diameter
 #' @export img.selector

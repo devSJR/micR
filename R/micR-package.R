@@ -6,8 +6,8 @@
 #' @name micR-package
 #' @aliases micR-package micR
 #' @docType package
-#' @author Stefan Roediger.
-#' Maintainer: Stefan Roediger <Stefan.Roediger@@b-tu.de>
+#' @author Stefan Rödiger.
+#' Maintainer: Stefan Rödiger <Stefan.Roediger@@b-tu.de>
 #' @keywords package
 #' @importFrom bmp read.bmp
 #' @importFrom EBImage as.Image
@@ -21,4 +21,5 @@
 #' @importFrom EBImage watershed
 #' @importFrom EBImage computeFeatures
 #' @importFrom EBImage computeFeatures.moment
+#' @importFrom tools file_ext
 NULL

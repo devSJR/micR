@@ -8,10 +8,10 @@
 #' @param thresh.h is the height of the moving rectangular window (see thresh {EBImage})
 #' @details This function is a pipline of EBImage function to process an image 
 #' with the aim to find region of interest from nuclei.
-#' @author Stefan Roediger
-#' @references Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage—an R 
-#' package for image processing with applications to cellular phenotypes. Bioinformatics, 
-#' 26(7), pp. 979–981. http://doi.org/10.1093/bioinformatics/btq046. 
+#' @author Stefan Rödiger
+#' @references Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage 
+#' --an R package for image processing with applications to cellular phenotypes. 
+#' Bioinformatics, 26(7), pp. 979--981. http://doi.org/10.1093/bioinformatics/btq046. 
 #' @keywords nucleus blur watershed
 #' @export img.processor
 

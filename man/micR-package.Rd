@@ -9,8 +9,8 @@
 The package processes image data.
 }
 \author{
-Stefan Roediger.
-Maintainer: Stefan Roediger <Stefan.Roediger@b-tu.de>
+Stefan Rödiger.
+Maintainer: Stefan Rödiger <Stefan.Roediger@b-tu.de>
 }
 \references{
 T.B.D.
