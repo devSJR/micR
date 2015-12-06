@@ -6,13 +6,14 @@
 #' @param img.pp is input of the type img.processor object (see img.processor {micR})
 #' @param img.moment is an computeFeatures.moment object (see computeFeatures.moment {EBImage})
 #' @param quantile is a value to define the values removed by quantile filtering
-#' @details This function calculats the mean of a quantile filtered image object.
+#' @details This function calculates the mean of a quantile filtered image object.
 #' @author Stefan Rödiger
 #' @references T.B.D. 
 #' @keywords quantile mean
 #' @export spott
 
 spott <- function(img.raw, img.pp, img.moment, quantile = 0.03) {
+	  if(quantile <= 0 || quantile >= 1) stop("'quantile' must be => 0 and <= 1.")
 	  sapply(img.selector(img.moment), function(i) {
 	  img.data <- img.raw@.Data[which(img.pp@.Data == i, arr.ind = TRUE)]
 	  img.data.quantile <- quantile(img.data, c(quantile, 1 - quantile))

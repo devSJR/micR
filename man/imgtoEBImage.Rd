@@ -7,7 +7,7 @@
 imgtoEBImage(file)
 }
 \arguments{
-\item{file}{is the raw image (bmp).}
+\item{file}{is the raw image (currently supported: bmp, tiff, png, jpeg).}
 }
 \description{
 Selects objects based on a specific moment parameter, where currently only majoraxis (recalculated as micro meter) is used.

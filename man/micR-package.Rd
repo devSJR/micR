@@ -6,7 +6,10 @@
 \alias{micR-package}
 \title{Image processing with micR}
 \description{
-The package processes image data.
+The package processes image data. micR combines several commonly required
+functionality to import different images types, as supported by the R
+environment. Functionality of packages from Bioconductor and CRAN are  
+combined.
 }
 \author{
 Stefan Rödiger.

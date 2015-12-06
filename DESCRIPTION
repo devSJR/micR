@@ -6,7 +6,7 @@ Version: 0.0.1
 Date: 2015-11-27
 Author: Stefan Rödiger (cre), Michał Burdukiewicz (ctr)
 Maintainer: Stefan Rödiger <Stefan.Roediger@b-tu.de>
-Description: Wrapper and pipelines for automatic image processing based mainly on EBImage, bmp and foreach
+Description: Wrapper and pipelines for automatic image processing based mainly on EBImage, bmp and foreach. micR combines several commonly required functionality to import different images types, as supported by the R environment. Functionality of packages from Bioconductor and CRAN are combined.
 License: GPL-3
 Imports:
     bmp,

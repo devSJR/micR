@@ -2,7 +2,7 @@
 #' 
 #' Selects objects based on a specific moment parameter, where currently only majoraxis (recalculated as micro meter) is used.
 #' 
-#' @param file is the raw image (bmp).
+#' @param file is the raw image (currently supported: bmp, tiff, png, jpeg).
 #' @details This is a helper function to prepare pixel graphics for further use in EBImage.
 #' @author Stefan Rödiger
 #' @references T.B.D. 

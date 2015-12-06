@@ -19,7 +19,7 @@ spott(img.raw, img.pp, img.moment, quantile = 0.03)
 Selects objects based on a specific moment parameter, where currently only majoraxis (recalculated as micro meter) is used.
 }
 \details{
-This function calculats the mean of a quantile filtered image object.
+This function calculates the mean of a quantile filtered image object.
 }
 \author{
 Stefan Rödiger
