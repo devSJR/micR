@@ -25,4 +25,7 @@ Stefan Rödiger
 T.B.D.
 }
 \keyword{bmp}
+\keyword{jpeg}
+\keyword{png}
+\keyword{tiff}
 

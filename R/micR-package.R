@@ -13,9 +13,6 @@
 #' Maintainer: Stefan Rödiger <Stefan.Roediger@@b-tu.de>
 #' @keywords package
 #' @importFrom bmp read.bmp
-#' @importFrom doParallel detectCores
-#' @importFrom doParallel makeCluster
-#' @importFrom doParallel registerDoParallel
 #' @importFrom EBImage as.Image
 #' @importFrom EBImage bwlabel
 #' @importFrom EBImage computeFeatures
@@ -28,6 +25,5 @@
 #' @importFrom EBImage readImage
 #' @importFrom EBImage thresh
 #' @importFrom EBImage watershed
-#' @importFrom foreach foreach
 #' @importFrom tools file_ext
 NULL

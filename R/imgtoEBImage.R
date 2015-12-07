@@ -6,7 +6,7 @@
 #' @details This is a helper function to prepare pixel graphics for further use in EBImage.
 #' @author Stefan Rödiger
 #' @references T.B.D. 
-#' @keywords bmp
+#' @keywords bmp png tiff jpeg
 #' @examples imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
 #' @export imgtoEBImage
 
