@@ -12,8 +12,8 @@ environment. Functionality of packages from Bioconductor and CRAN are
 combined.
 }
 \author{
-Stefan Rödiger.
-Maintainer: Stefan Rödiger <Stefan.Roediger@b-tu.de>
+Stefan Roediger.
+Maintainer: Stefan Roediger <Stefan.Roediger@b-tu.de>
 }
 \references{
 T.B.D.

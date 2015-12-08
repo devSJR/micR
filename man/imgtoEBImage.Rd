@@ -19,7 +19,7 @@ This is a helper function to prepare pixel graphics for further use in EBImage.
 imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
 }
 \author{
-Stefan Rödiger
+Stefan Roediger
 }
 \references{
 T.B.D.

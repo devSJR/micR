@@ -23,7 +23,7 @@ Selects objects based on a specific parameter value (currently nucleus diamter, 
 This function which image object are within a defined size range (e.g., betwenn 5 and 25 micro meter in diamter).
 }
 \author{
-Stefan Rödiger
+Stefan Roediger
 }
 \references{
 T.B.D.

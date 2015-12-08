@@ -7,7 +7,7 @@
 #' @param img.moment is an computeFeatures.moment object (see computeFeatures.moment {EBImage})
 #' @param quantile is a value to define the values removed by quantile filtering
 #' @details This function calculates the mean of a quantile filtered image object.
-#' @author Stefan Rödiger
+#' @author Stefan Roediger
 #' @references T.B.D. 
 #' @keywords quantile mean
 #' @export spott

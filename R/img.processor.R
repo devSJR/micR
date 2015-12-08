@@ -6,9 +6,12 @@
 #' @param gblur.sigma is the standard deviation of the Gaussian filter used for blurring (see gblur {EBImage})
 #' @param thresh.w is the width of the moving rectangular window (see thresh {EBImage})
 #' @param thresh.h is the height of the moving rectangular window (see thresh {EBImage})
-#' @details This function is a pipline of EBImage function to process an image 
+#' @param thresh.offset is the thresholding offset from the averaged value (see thresh {EBImage})
+#' @param watershed.ext is the radius of the neighborhood in pixels for the detection of neighboring 
+#' objects. Higher value smoothes out small objects (see thresh {EBImage})
+#' @details This function is a pipeline of EBImage function to process an image 
 #' with the aim to find region of interest from nuclei.
-#' @author Stefan Rödiger
+#' @author Stefan Roediger
 #' @references Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage 
 #' --an R package for image processing with applications to cellular phenotypes. 
 #' Bioinformatics, 26(7), pp. 979--981. http://doi.org/10.1093/bioinformatics/btq046. 

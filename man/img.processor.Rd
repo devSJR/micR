@@ -15,16 +15,21 @@ img.processor(img.raw = NULL, gblur.sigma = 2, thresh.w = 20,
 \item{thresh.w}{is the width of the moving rectangular window (see thresh {EBImage})}
 
 \item{thresh.h}{is the height of the moving rectangular window (see thresh {EBImage})}
+
+\item{thresh.offset}{is the thresholding offset from the averaged value (see thresh {EBImage})}
+
+\item{watershed.ext}{is the radius of the neighborhood in pixels for the detection of neighboring 
+objects. Higher value smoothes out small objects (see thresh {EBImage})}
 }
 \description{
 Find nucleus of a cell.
 }
 \details{
-This function is a pipline of EBImage function to process an image 
+This function is a pipeline of EBImage function to process an image 
 with the aim to find region of interest from nuclei.
 }
 \author{
-Stefan Rödiger
+Stefan Roediger
 }
 \references{
 Pau G, Fuchs F, Sklyar O, Boutros M and Huber W (2010). EBImage 

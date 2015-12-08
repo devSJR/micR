@@ -9,8 +9,8 @@
 #' @name micR-package
 #' @aliases micR-package micR
 #' @docType package
-#' @author Stefan Rödiger.
-#' Maintainer: Stefan Rödiger <Stefan.Roediger@@b-tu.de>
+#' @author Stefan Roediger.
+#' Maintainer: Stefan Roediger <Stefan.Roediger@@b-tu.de>
 #' @keywords package
 #' @importFrom bmp read.bmp
 #' @importFrom EBImage as.Image

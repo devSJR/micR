@@ -4,7 +4,7 @@
 #' 
 #' @param file is the raw image (currently supported: bmp, tiff, png, jpeg).
 #' @details This is a helper function to prepare pixel graphics for further use in EBImage.
-#' @author Stefan Rödiger
+#' @author Stefan Roediger
 #' @references T.B.D. 
 #' @keywords bmp png tiff jpeg
 #' @examples imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))

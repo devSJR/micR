@@ -4,11 +4,11 @@
 #' @docType data
 #' @format .png images.
 #' @source The data were taken with the VideoScan technology.
-#' @author Jens Schneider (BTU CS), Stefan Rödiger (BTU CS), Michał Burdukiewicz
-#' (University of Wrocław)
-#' @references Rödiger, S.; Schierack, P.; Böhm, A.; Nitschke, J.; Berger, I.; 
-#' Frömmel, U.; Schmidt, C.; Ruhland, M.; Schimke, I.; Roggenbuck, D.; 
-#' Lehmann, W.; Schröder, C. Adv. Biochem. Eng. Biotechnol. 2013, 133, 35--74.
+#' @author Jens Schneider (BTU CS), Stefan Roediger (BTU CS), Michal Burdukiewicz
+#' (University of Wroclaw)
+#' @references Roediger, S.; Schierack, P.; Boehm, A.; Nitschke, J.; Berger, I.; 
+#' Froemmel, U.; Schmidt, C.; Ruhland, M.; Schimke, I.; Roggenbuck, D.; 
+#' Lehmann, W.; Schroeder, C. Adv. Biochem. Eng. Biotechnol. 2013, 133, 35--74.
 #' @examples 
 #' # read all images
 #' img.APC <- imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))

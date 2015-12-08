@@ -1,15 +1,25 @@
-#' Determine a region of interest or preview area of an image object
+#' Define a region of interest or preview area of an image object
 #' 
-#' Determine a region of interest or preview area of an image object
+#' The function defines a region of interest or preview area of an image object.
+#' This can be useful if images are large and processing of the images gets time
+#' consuming for fast previews. The functions preserves the raw image.
 #' 
 #' @param img.raw is the raw image that will used for the analysis
 #' @param width is the width of the image area
 #' @param hight is the hight of the image area
 #' @details This function determines a region of interest or preview area of an 
-#' image object. The imgtoEBImage function is used to read in the images.
-#' @author Stefan Rödiger
+#' image object. The imgtoEBImage function is used to read in the images. It is 
+#' to read in images via the micR package to save time during processing test runs. 
+#' The img.dim function returns a list with the following objects: img.raw (raw image), 
+#' img.reduced (size reduce image) and img.dim (pixel range used after reduction).
+#' @author Stefan Roediger
 #' @references T.B.D. 
-#' @examples img.dim(system.file('images/Well_Slide2_9_APC.png', package='micR'), width = 25, hight = 25)
+#' @examples
+#' # Import an image via img.dim and assign it to the object img.red with 
+#' # reduced size. Finally plot a histogram of the reduced image.
+#' img.red <- img.dim(system.file('images/Well_Slide2_9_DAPI.png', 
+#'                    package='micR'), width = 25, hight = 25)
+#' hist(img.red[["img.reduced"]], main = "DAPI (nuclei)")
 #' @keywords dimensions area
 #' @export img.dim
 
@@ -35,4 +45,4 @@ img.dim <- function(img.raw, width = 25, hight = 25) {
 				img.dim.reduced[["x1"]]:img.dim.reduced[["x2"]]]
 
     list(img.raw = img.imported, img.reduced = img.reduced, img.dim = img.dim.reduced)
-}
+    }

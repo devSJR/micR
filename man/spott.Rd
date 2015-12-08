@@ -22,7 +22,7 @@ Selects objects based on a specific moment parameter, where currently only major
 This function calculates the mean of a quantile filtered image object.
 }
 \author{
-Stefan Rödiger
+Stefan Roediger
 }
 \references{
 T.B.D.
