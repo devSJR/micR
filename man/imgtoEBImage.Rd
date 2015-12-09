@@ -4,10 +4,12 @@
 \alias{imgtoEBImage}
 \title{Helper function to read image files into EBImage}
 \usage{
-imgtoEBImage(file)
+imgtoEBImage(file, convert.bmp = TRUE)
 }
 \arguments{
 \item{file}{is the raw image (currently supported: bmp, tiff, png, jpeg).}
+
+\item{convert.bmp}{is a binary operator used to convert the bmp integer matrix to floating point.}
 }
 \description{
 Selects objects based on a specific moment parameter, where currently only majoraxis (recalculated as micro meter) is used.

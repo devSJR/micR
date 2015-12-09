@@ -26,12 +26,12 @@
 img.dim <- function(img.raw, width = 25, hight = 25) {
     width <- as.integer(width)
     hight <- as.integer(hight)
-    if (width < 0 || width > 100) stop("Region of interest on in a suitable range ([0 ... 100]).")
-    if (hight < 0 || hight > 100) stop("Region of interest on in a suitable range ([0 ... 100]).")				  
+    if (width < 0 || width > 100) stop("Region of interest not in a suitable range ([0 ... 100]).")
+    if (hight < 0 || hight > 100) stop("Region of interest not in a suitable range ([0 ... 100]).")				  
 
-    img.imported <- imgtoEBImage(img.raw)
+    img.raw <- imgtoEBImage(img.raw)
     
-    img.dim <- dim(img.imported)
+    img.dim <- dim(img.raw)
 
     img.center <- data.frame(x.center = img.dim[1] * 0.5, y.center = img.dim[2] * 0.5)
 
@@ -41,8 +41,8 @@ img.dim <- function(img.raw, width = 25, hight = 25) {
 				  y2 = img.center[["y.center"]] * (100 + hight) / 100
 				 )
     
-    img.reduced <- img.imported[img.dim.reduced[["y1"]]:img.dim.reduced[["y2"]], 
+    img.reduced <- img.raw[img.dim.reduced[["y1"]]:img.dim.reduced[["y2"]], 
 				img.dim.reduced[["x1"]]:img.dim.reduced[["x2"]]]
 
-    list(img.raw = img.imported, img.reduced = img.reduced, img.dim = img.dim.reduced)
+    list(img.raw = img.raw, img.reduced = img.reduced, img.dim = img.dim.reduced)
     }

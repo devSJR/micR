@@ -3,11 +3,16 @@
 #' Find nucleus of a cell.
 #' 
 #' @param img.raw is the raw image that will used for the detection of the nucleus
-#' @param gblur.sigma is the standard deviation of the Gaussian filter used for blurring (see gblur {EBImage})
-#' @param thresh.w is the width of the moving rectangular window (see thresh {EBImage})
-#' @param thresh.h is the height of the moving rectangular window (see thresh {EBImage})
-#' @param thresh.offset is the thresholding offset from the averaged value (see thresh {EBImage})
-#' @param watershed.ext is the radius of the neighborhood in pixels for the detection of neighboring 
+#' @param gblur.sigma is the standard deviation of the Gaussian filter used for 
+#' blurring (see gblur {EBImage})
+#' @param thresh.w is the width of the moving rectangular window (see thresh 
+#' {EBImage})
+#' @param thresh.h is the height of the moving rectangular window (see thresh 
+#' {EBImage})
+#' @param thresh.offset is the thresholding offset from the averaged value 
+#' (see thresh {EBImage})
+#' @param watershed.ext is the radius of the neighborhood in pixels for the 
+#' detection of neighboring 
 #' objects. Higher value smoothes out small objects (see thresh {EBImage})
 #' @details This function is a pipeline of EBImage function to process an image 
 #' with the aim to find region of interest from nuclei.
@@ -19,9 +24,11 @@
 #' @export img.processor
 
 img.processor <- function(img.raw = NULL, gblur.sigma = 2, thresh.w = 20, 
-			  thresh.h = 20, thresh.offset = 0.02, watershed.ext = 1) {
+			  thresh.h = 20, thresh.offset = 0.02, 
+			  watershed.ext = 1) {
       img.gblur 	<- gblur(img.raw, sigma = gblur.sigma)
-      img.thresh 	<- thresh(img.gblur, w = thresh.w, h = thresh.h, offset = thresh.offset)
+      img.thresh 	<- thresh(img.gblur, w = thresh.w, h = thresh.h, 
+				  offset = thresh.offset)
       img.opening 	<- opening(img.thresh, makeBrush(5, shape='disc'))
       img.fillHull 	<- fillHull(img.opening)
       img.bwlabel 	<- bwlabel(img.fillHull)

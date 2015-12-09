@@ -10,15 +10,20 @@ img.processor(img.raw = NULL, gblur.sigma = 2, thresh.w = 20,
 \arguments{
 \item{img.raw}{is the raw image that will used for the detection of the nucleus}
 
-\item{gblur.sigma}{is the standard deviation of the Gaussian filter used for blurring (see gblur {EBImage})}
+\item{gblur.sigma}{is the standard deviation of the Gaussian filter used for 
+blurring (see gblur {EBImage})}
 
-\item{thresh.w}{is the width of the moving rectangular window (see thresh {EBImage})}
+\item{thresh.w}{is the width of the moving rectangular window (see thresh 
+{EBImage})}
 
-\item{thresh.h}{is the height of the moving rectangular window (see thresh {EBImage})}
+\item{thresh.h}{is the height of the moving rectangular window (see thresh 
+{EBImage})}
 
-\item{thresh.offset}{is the thresholding offset from the averaged value (see thresh {EBImage})}
+\item{thresh.offset}{is the thresholding offset from the averaged value 
+(see thresh {EBImage})}
 
-\item{watershed.ext}{is the radius of the neighborhood in pixels for the detection of neighboring 
+\item{watershed.ext}{is the radius of the neighborhood in pixels for the 
+detection of neighboring 
 objects. Higher value smoothes out small objects (see thresh {EBImage})}
 }
 \description{

@@ -13,10 +13,14 @@ Example images for the micR package
 }
 \examples{
 # read all images
-img.APC <- imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', package='micR'))
-img.Cy3 <- imgtoEBImage(system.file('images/Well_Slide2_9_Cy3.png', package='micR'))
-img.DAPI <- imgtoEBImage(system.file('images/Well_Slide2_9_DAPI.png', package='micR'))
-img.FITC <- imgtoEBImage(system.file('images/Well_Slide2_9_FITC.png', package='micR'))
+img.APC <- imgtoEBImage(system.file('images/Well_Slide2_9_APC.png', 
+					package='micR'))
+img.Cy3 <- imgtoEBImage(system.file('images/Well_Slide2_9_Cy3.png', 
+					package='micR'))
+img.DAPI <- imgtoEBImage(system.file('images/Well_Slide2_9_DAPI.png', 
+					package='micR'))
+img.FITC <- imgtoEBImage(system.file('images/Well_Slide2_9_FITC.png', 
+					package='micR'))
 }
 \author{
 Jens Schneider (BTU CS), Stefan Roediger (BTU CS), Michal Burdukiewicz
