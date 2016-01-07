@@ -17,10 +17,10 @@ img.selector(img.moment, min.diameter = 5, max.diameter = 55,
 \item{pixel.length}{is the pixel length of the CCD chip (e.g., 325 nm)}
 }
 \description{
-Selects objects based on a specific parameter value (currently nucleus diamter, only).
+Selects objects based on a specific parameter value (currently nucleus diameter, only).
 }
 \details{
-This function which image object are within a defined size range (e.g., betwenn 5 and 25 micro meter in diamter).
+This function which image object are within a defined size range (e.g., between 5 and 25 micro meter in diameter).
 }
 \author{
 Stefan Roediger

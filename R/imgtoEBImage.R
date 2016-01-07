@@ -14,7 +14,7 @@ imgtoEBImage <- function(file, convert.bmp = TRUE) {
   
   file.ext <- file_ext(file)
   
-  if (file.ext == "tiff" || file.ext == "png" || file.ext == "jpeg") {
+  if (file.ext == "tiff" || file == "tif" || file.ext == "png" || file.ext == "jpeg") {
     readImage(file)
   } else {
     if (file.ext == "bmp")

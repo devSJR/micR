@@ -4,7 +4,7 @@
 \alias{spott}
 \title{Calculate the central tendency of an image object}
 \usage{
-spott(img.raw, img.pp, img.moment, quantile = 0.03)
+spott(img.raw, img.pp, img.moment, quantile = 0.03, ...)
 }
 \arguments{
 \item{img.raw}{is the raw image that will used for the detection of the nucleus}
@@ -14,6 +14,8 @@ spott(img.raw, img.pp, img.moment, quantile = 0.03)
 \item{img.moment}{is an computeFeatures.moment object (see computeFeatures.moment {EBImage})}
 
 \item{quantile}{is a value to define the values removed by quantile filtering}
+
+\item{...}{is the input for the img.selector subroutine (see img.selector {micR})}
 }
 \description{
 Selects objects based on a specific moment parameter, where currently only majoraxis (recalculated as micro meter) is used.

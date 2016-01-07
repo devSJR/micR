@@ -35,14 +35,18 @@ img.dim <- function(img.raw, width = 25, hight = 25) {
 
     img.center <- data.frame(x.center = img.dim[1] * 0.5, y.center = img.dim[2] * 0.5)
 
-    img.dim.reduced <- data.frame(x1 = img.center[["x.center"]] * (100 - width) / 100,
-				  x2 = img.center[["x.center"]] * (100 + width) / 100,
-				  y1 = img.center[["y.center"]] * (100 - hight) / 100,
-				  y2 = img.center[["y.center"]] * (100 + hight) / 100
-				 )
+    x.center.shift <- as.integer(img.center[["x.center"]] * (width - 1) / 100)
+    y.center.shift <- as.integer(img.center[["y.center"]] * (hight - 1) / 100)
     
-    img.reduced <- img.raw[img.dim.reduced[["y1"]]:img.dim.reduced[["y2"]], 
-				img.dim.reduced[["x1"]]:img.dim.reduced[["x2"]]]
+    img.dim.reduced <- data.frame(x1 = img.center[["x.center"]] - x.center.shift,
+				  x2 = img.center[["x.center"]] + x.center.shift,
+				  y1 = img.center[["y.center"]] - y.center.shift,
+				  y2 = img.center[["y.center"]] + y.center.shift
+			
+		      )
+    
+    img.reduced <- img.raw[img.dim.reduced[["x1"]]:img.dim.reduced[["x2"]], 
+			   img.dim.reduced[["y1"]]:img.dim.reduced[["y2"]]]
 
     list(img.raw = img.raw, img.reduced = img.reduced, img.dim = img.dim.reduced)
     }
