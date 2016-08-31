@@ -1,6 +1,6 @@
 Package: micR
 Type: Package
-Title: Process image data for the enumeration of fluorescent image cells
+Title: Image processing with micR
 Version: 0.0.1
 Date: 2015-11-27
 Author: Stefan Roediger (cre), Michal Burdukiewicz (ctr)

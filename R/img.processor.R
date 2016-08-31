@@ -13,7 +13,7 @@
 #' (see thresh {EBImage})
 #' @param watershed.ext is the radius of the neighborhood in pixels for the 
 #' detection of neighboring 
-#' objects. Higher value smoothes out small objects (see thresh {EBImage})
+#' objects. Higher value smoothes out small objects (see watershed {EBImage})
 #' @details This function is a pipeline of EBImage function to process an image 
 #' with the aim to find region of interest from nuclei.
 #' @author Stefan Roediger
